@@ -1,0 +1,163 @@
+/* Mecanismos Gerais */
+@font-face{
+    font-family: 'STRegular';
+    src: url('../Fontes/ShareTech-Regular.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+:root{
+    --Cor0: white;
+    --Cor1: #86defc;
+    --Cor2: #57d0f8;
+    --Cor3: #02B4EE;
+    --Cor4: #0390be;
+    --Cor5: #02698b;
+    --Cor6: #012936;
+    --Cor7: #000000;
+}
+/* Cabeçalho */
+#Posição_Bot{
+    position: absolute;
+    top: 2%;
+    left: 77%;
+}
+button{
+    color: var(--Cor0);
+    background-color: var(--Cor4);
+    border: 5px solid var(--Cor5);
+}
+button:hover{
+    color: var(--Cor1);
+    background-color: var(--Cor5);
+    border: 5px solid var(--Cor6);
+}
+button:active{
+    color: var(--Cor2);
+    background-color: var(--Cor6);
+    border: 5px solid var(--Cor7);
+}
+a{
+    color: var(--Cor0);
+}
+a:hover{
+    color: var(--Cor1);
+}
+a:active{
+    color: var(--Cor2);
+}
+.Botão{
+    margin: 5px;
+    padding: 5px;
+}
+/* Conteundo Principal */
+body{
+    background-color: var(--Cor7);
+    background-image: url('../imagem/Fundo/Easy01D50.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    margin: 20px;
+}
+#TP{
+    font-size: 30px;
+    color: var(--Cor0);
+    font-family: 'STRegular';
+    margin: 10px 0px 10px 0px;
+}
+#TG{
+    font-size: 40px;
+    color: var(--Cor0);
+    font-family: 'STRegular';
+    margin: 0px 0px 5px 0px;
+}
+#Nome{
+    color: var(--Cor2);
+}
+.texto{
+    font-size: 20px;
+    color: var(--Cor0);
+    font-family: 'STRegular';
+}
+.Título{
+    text-align: center;
+    font-size: 30px;
+    color: var(--Cor0);
+    font-family: 'STRegular';
+}
+#move_Hability{
+    position: absolute;
+    top: 32%;
+}
+picture{
+    display: block;
+}
+.ícone{
+    width: 85px;
+}
+.Icon_alinP1{
+    display: inline-block;
+}
+.Icon_alinP2{
+    display: inline-block;
+}
+/* Projetos */
+.ícone_Projetos{
+    width: 300px;
+    margin: 5px;
+    border: 5px solid var(--Cor4);
+}
+.ícone_Projetos:hover{
+    border: 5px solid var(--Cor5);
+}
+.ícone_Projetos:active{
+    border: 5px solid var(--Cor6);
+}
+#Apoio{
+    position: absolute;
+    top: 64%;
+    left: 0%;
+    height: 220px;
+    width: 300px;
+}
+#Apoio > h1{
+    margin: 10px;
+    font-size: 30px;
+    text-align: left;
+    color: var(--Cor0);
+    font-family: 'STRegular';
+}
+#Apoio img{
+    background-color: #012936;
+    width: 150px;
+    margin: 0% 0% 0% 20%;
+}
+#Projects{
+    height: 477px;
+    width: 644px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+#Projects > button{
+    margin-left: 3%;
+}
+#Projects > h1{
+    text-align: center;
+    color: var(--Cor0);
+    font-family: 'STRegular';
+}
+.Img_Projetos_P1{
+    display: inline-block;
+}
+.Img_Projetos_P2{
+    display: inline-block;
+}
+#Projects button{
+    padding: 10px 285px 10px 285px;
+    margin-top: 1%;
+}
