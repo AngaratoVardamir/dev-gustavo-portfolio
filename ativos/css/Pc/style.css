@@ -1,0 +1,92 @@
+/* Mecanismos Gerais */
+@font-face{
+    font-family: 'ShareTech';
+    src: url('../../Fontes/ShareTech-Regular.ttf');
+}
+/* Grande */
+@media only screen and (min-width:748px){
+    p{
+        font-size: 20px;
+        color: var(--Cor0);
+    }
+    h1{
+        color: var(--Cor0);
+    }
+    picture{
+        display: block;
+    }
+    h1,h2,h3,h4,h5,h6,p{
+        font-family: ShareTech;
+    }
+    #TP{
+        font-size: 30px; 
+    }
+    #TG{
+        font-size: 40px;
+    }
+    #Nome{
+        color: var(--Cor1);
+    }
+    .Título{
+        font-size: 30px;
+    }
+    .ícone{
+        width: 55px;
+    }
+    .Icon_alinP1{
+        display: inline-block;
+    }
+    .Icon_alinP2{
+        display: inline-block;
+    }
+    /* Apoio */
+    #Apoio{
+        font-size: 30px;
+    }
+    #Apoio img{
+        width: 200px;
+    }
+    /* Projetos */
+    #Projects{
+        background-color: rgba(240, 248, 255, 0.103);
+        padding: 2%;
+        position: absolute;
+        top: 30%;
+        border-radius: 10%;
+        text-align: center;
+    }
+    .ES_DI{
+        display: inline-block;
+    }
+    .ProjeLin{
+        display: inline-block;
+    }
+    .ícone_Projetos{
+        width: 157px;
+        border: var(--Cor4) solid 3px;
+    }
+    .ícone_Projetos:hover{
+        border: var(--Cor5) solid 3px;
+    }
+    .ícone_Projetos:active{
+        border: var(--Cor6) solid 3px;
+    }
+    footer{
+        padding-bottom: 30px;
+    }
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+:root{
+    --Cor0: white;
+    --Cor1: #86defc;
+    --Cor2: #57d0f8;
+    --Cor3: #02B4EE;
+    --Cor4: #0390be;
+    --Cor5: #02698b;
+    --Cor6: #012936;
+    --Cor7: #000000;
+}

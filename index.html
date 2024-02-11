@@ -5,83 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <!-- Links -->
-    <link rel="stylesheet" href="ativos/css/style.css">
+    <!-- Celular -->
+    <link rel="stylesheet" href="ativos/css/Celular/style.css">
+    <!-- Tablet -->
+    <link rel="stylesheet" href="ativos/css/Tablet/style.css">
+    <!-- Pc -->
+    <link rel="stylesheet" href="ativos/css/Pc/style.css">
     <script src="ativos/js/index.js"></script>
 </head>
 <body>
     <header>
-        <div id="Posição_Bot">
-            <button class="Botão">
-                <a href="ativos/pdf/CV.v1.pdf" download="CV" type="Application/pdf">
+        <div id="Pos_Bot">
+            <button class="Bot">
+                <a class="Bot_Link" href="ativos/pdf/CV.v1.pdf" download="CV" type="Application/pdf">
                     Baixa o CV
                 </a>
             </button>
-            <button class="Botão" onclick="Copia()" value="Cel.(31) 0000-000">
-                Cel.(31) 0000-000
+            <button class="Bot" onclick="BotClick()">
+                Cel: (31) 97240-7179
             </button>
         </div>
     </header>
     <main>
-        <p id="TP">Olá, Pessoal</p>
-        <p id="TG">
-        Sou <strong id="Nome">Gustavo Augusto</strong></p>
-        <p class="texto">Estudante de Programação.</p>
-        <p class="texto">Brasileiro</p>
-        <p class="texto">Nascindo em 2004</p>
-        <div id="move_Hability">
-            <h1 class="Título">Habilidades</h1>
-            <picture>
-                <div class="Icon_alinP1">
-                    <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-git.512.png" alt="">
+        <h1 id="Horas"></h1>
+        <div id="Coluna">
+            <div id="Esquerdo" class="ES_DI">
+                <p id="TP">Olá, Pessoal</p>
+                <p id="TG">
+                    Sou <strong id="Nome">
+                        Gustavo Augusto
+                    </strong>
+                </p>
+                <p class="texto">Estudante de Programação.</p>
+                <p class="texto">Brasileiro</p>
+                <p class="texto">Nascindo em 2004</p>
+                <div id="move_Hability">
+                    <h1 class="Título">Habilidades</h1>
+                    <picture>
+                        <div class="Icon_alinP1">
+                            <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-git.512.png" alt="">
+                        </div>
+                        <div class="Icon_alinP1">
+                            <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-css-3.512.png" alt="">
+                        </div>
+                        <div class="Icon_alinP1">
+                            <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-javascript.512.png" alt="">
+                        </div>
+                    </picture>
+                    <picture>
+                        <div class="Icon_alinP2">
+                            <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-github.512.png" alt="">
+                        </div>
+                        <div class="Icon_alinP2">
+                            <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-html-5.512.png" alt="">
+                        </div>
+                        <div class="Icon_alinP2">
+                            <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-python.512.png" alt="">
+                        </div>
+                    </picture>
                 </div>
-                <div class="Icon_alinP1">
-                    <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-css-3.512.png" alt="">
+                <div id="Apoio">
+                    <h1>Apoie Meu Trabalho</h1>
+                    <img src="ativos/imagem/Png/QRcode.png" alt="">
                 </div>
-                <div class="Icon_alinP1">
-                    <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-javascript.512.png" alt="">
+            </div>
+            <div id="Direita" class="ES_DI">
+                <div id="Projects">
+                    <h1 class="Título" id="ProjTitulo">Projetos</h1>
+                    <picture>
+                        <div class="ProjeLin">
+                            <div class="Img_Projetos_P1">
+                                <img class="ícone_Projetos" src="ativos/imagem/Gif/Em-Breve.gif" alt="" onclick="Projeto()">
+                            </div>
+                            <div class="Img_Projetos_P1">
+                                <img class="ícone_Projetos" src="ativos/imagem/Gif/Em-Breve.gif" alt="" onclick="Projeto()">
+                            </div>
+                        </div>
+                        <div class="ProjeLin">
+                            <div class="Img_Projetos_P2">
+                                <img class="ícone_Projetos" src="ativos/imagem/Gif/Em-Breve.gif" alt="" onclick="Projeto()">
+                            </div>
+                            <div class="Img_Projetos_P2">
+                                <img class="ícone_Projetos" src="ativos/imagem/Gif/Em-Breve.gif" alt="" onclick="Projeto()">
+                            </div>
+                        </div>
+                    </picture>
+                    <button id="Botão_Mais">Mais</button>
                 </div>
-            </picture>
-            <picture>
-                <div class="Icon_alinP2">
-                    <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-github.512.png" alt="">
-                </div>
-                <div class="Icon_alinP2">
-                    <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-html-5.512.png" alt="">
-                </div>
-                <div class="Icon_alinP2">
-                    <img class="ícone" src="ativos/imagem/Ícone/Aniket-Suvarna-Box-Logo-Bxl-python.512.png" alt="">
-                </div>
-            </picture>
-        </div>
-        <div id="Apoio">
-            <h1>Apoie Meu Trabalho</h1>
-            <img src="ativos/imagem/Png/QRcode.png" alt="">
-        </div>
-        <div id="Projects">
-            <h1 class="Título">Projetos</h1>
-            <picture>
-                <div class="ProjeLin">
-                    <div class="Img_Projetos_P1">
-                        <img class="ícone_Projetos" src="ativos/imagem/Gif/Em-Breve.gif" alt="" onclick="Projeto()">
-                    </div>
-                    <div class="Img_Projetos_P1">
-                        <img class="ícone_Projetos" src="ativos/imagem/Gif/Em-Breve.gif" alt="" onclick="Projeto()">
-                    </div>
-                </div>
-                <div class="ProjeLin">
-                    <div class="Img_Projetos_P2">
-                        <img class="ícone_Projetos" src="ativos/imagem/Gif/Em-Breve.gif" alt="" onclick="Projeto()">
-                    </div>
-                    <div class="Img_Projetos_P2">
-                        <img class="ícone_Projetos" src="ativos/imagem/Gif/Em-Breve.gif" alt="" onclick="Projeto()">
-                    </div>
-                </div>
-            </picture>
-            <button id="Botão_Mais">Mais</button>
+            </div>
         </div>
     </main>
     <footer>
-
+        <p>
+            @2024.Gustavo.Augusto/Angarato.Valdermi
+        </p>
     </footer>
 </body>
 </html>
