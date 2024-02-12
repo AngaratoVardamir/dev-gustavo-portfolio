@@ -25,7 +25,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         backdrop-filter: blur(10px);
-        padding: 1%;
+        background-attachment: fixed;
     }
     p{
         font-size: 20px;
@@ -74,7 +74,7 @@
         padding: 2%;
         position: absolute;
         left: 60%;
-        top: 30%;
+        top: 10%;
         border-radius: 10%;
         text-align: center;
     }
@@ -96,7 +96,7 @@
     }
     /* Pé */
     footer{
-        padding: 6vw;
+        padding: 1px;
     }
     /* Botão */
     #Pos_Bot{

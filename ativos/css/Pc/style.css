@@ -5,6 +5,9 @@
 }
 /* Grande */
 @media only screen and (min-width:748px){
+    body{
+        background-attachment: fixed;
+    }
     p{
         font-size: 20px;
         color: var(--Cor0);
@@ -51,7 +54,7 @@
         background-color: rgba(240, 248, 255, 0.103);
         padding: 2%;
         position: absolute;
-        top: 30%;
+        top: 10%;
         border-radius: 10%;
         text-align: center;
     }
@@ -72,7 +75,7 @@
         border: var(--Cor6) solid 3px;
     }
     footer{
-        padding-bottom: 30px;
+        padding-bottom: 1px;
     }
 }
 *{

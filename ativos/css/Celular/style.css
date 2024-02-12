@@ -26,6 +26,7 @@
         background-size: cover;
         backdrop-filter: blur(10px);
         padding: 1%;
+        background-attachment: fixed;
     }
     p{
         font-size: 20px;
