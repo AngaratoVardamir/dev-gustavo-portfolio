@@ -1,0 +1,117 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'Elegantech';
+    src: url('../../Fontes/elegantech/EleganTech-.ttf');
+}
+:root{
+    --CorRoxo:#731DD8;
+    --CorBranco:#DADAD9;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    font-family: 'Elegantech';
+    color: var(--CorBranco);
+}
+body{
+    background-image: url('../../imagem/Jpg/4k-tech-l48mhptfmfh7vmuu.jpg');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100vw;
+    height: 130vh;
+
+    min-width: 450px;
+    min-height: 620px;
+    max-width: 1366px;
+    max-height: 630px;
+}
+.Col_Hab > img{
+    width:16%;
+}
+#Projetos > div > img{
+    width: 45%;
+}
+button{
+    background-color: var(--CorRoxo);
+}
+body > #Botãos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2%;
+}
+body > #Botãos > button{
+    margin: 2px;
+}
+body > #Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+Body > #Logo > img{
+    width: 17%;
+    border-radius: 50%;
+}
+/* Textos */
+h1{
+    font-size: 25px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 15px;
+}
+strong{
+    color: var(--CorRoxo);
+}
+#Alinhamento_HP2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#Habilidades{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 40px 40px 40px;
+    border-radius: 20% 0% 0% 20%;
+    background-color: rgba(0, 217, 255, 0.068);
+}
+#Habilidades > div > h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#Projetos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(0, 217, 255, 0.068);
+    padding: 20px 40px 10px 10px;
+    border-radius: 0% 20% 20% 0%;
+}
+img{
+    border: 2px solid var(--CorRoxo);
+}
+img:hover{
+    border-color: #b071f8;
+}
+img:active{
+    border-color: #461283;
+}
+#Projetos > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Rodapé{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

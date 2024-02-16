@@ -1,0 +1,79 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'Elegantech';
+    src: url('../../Fontes/elegantech/EleganTech-.ttf');
+}
+:root{
+    --CorRoxo:#731DD8;
+    --CorBranco:#DADAD9;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    font-family: 'Elegantech';
+    color: var(--CorBranco);
+}
+
+body{
+    background-image: url('../../imagem/Jpg/4k-tech-l48mhptfmfh7vmuu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    backdrop-filter: blur(20px);
+}
+/*Vamos ver */
+#Botãos{
+    display: flex;
+    justify-content: flex-end;
+}
+#Botãos > button{
+    background-color: var(--CorRoxo);
+    padding: 5px;
+}
+#Rodapé{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Logo > img{
+    width: 100px;
+    border-radius: 50%;
+}
+#Habilidades{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+#Habilidades > div >img{
+    border: 1px solid var(--CorRoxo);
+    padding: 5px 10px;
+    width: 6%;
+    display: flex;
+
+}
+#Habilidades > div > img:hover{
+    border: 1px solid #b071f8;
+}
+#Habilidades > div > img:active{
+    border: 1px solid #461283;
+}
+#Projetos > div > img{
+    border: 2px solid var(--CorRoxo);
+    background-color: #e100ff09;
+    padding: 5px 10px;
+    width: 20%;
+}
+#Projetos > div > img:hover{
+    border: 2px solid #b071f8;
+}
+#Projetos > div > img:active{
+    border: 2px solid #461283;
+}
+
+#Projetos > button{
+    background-color: var(--CorRoxo);
+}
