@@ -15,15 +15,12 @@
     color: var(--CorBranco);
 }
 body{
-    background-image: url('../../imagem/Jpg/4k-tech-l48mhptfmfh7vmuu.jpg');
+    background-image: url('../../imagem/Jpg/Cego.jpg');
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: absolute;
-    width: 100vw;
-    height: 130vh;
-
     min-width: 450px;
     min-height: 620px;
     max-width: 1366px;
@@ -37,23 +34,27 @@ body{
 }
 button{
     background-color: var(--CorRoxo);
+    padding: 8px;
+    cursor: pointer;
 }
 body > #Botãos{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 2%;
 }
 body > #Botãos > button{
     margin: 2px;
+    font-size: 2.0vw;
 }
-body > #Logo{
+body > #Logo > a{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-Body > #Logo > img{
+Body > #Logo > a > img{
     width: 17%;
     border-radius: 50%;
 }
@@ -66,6 +67,9 @@ h2{
 }
 h3{
     font-size: 15px;
+}
+h1,h2,h3,h4{
+    line-height: 2em;
 }
 strong{
     color: var(--CorRoxo);
@@ -101,6 +105,7 @@ img{
 }
 img:hover{
     border-color: #b071f8;
+    cursor: pointer;
 }
 img:active{
     border-color: #461283;
@@ -109,6 +114,12 @@ img:active{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#Apoie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #Rodapé{
     display: flex;
