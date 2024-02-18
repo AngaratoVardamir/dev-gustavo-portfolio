@@ -37,6 +37,9 @@ button{
     padding: 8px;
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+}
 body > #Botãos{
     display: flex;
     flex-direction: row;
