@@ -27,27 +27,28 @@
     <script src="Ativos/Js/Projetos.js"></script>
 </head>
 <body>
-    <div id="Botãos">
-        <button>
-            <a href="Ativos/PDF/CV.pdf" download="CV" type="application/pdf">
-                <p>Baixa o CV</p>
-            </a>
-        </button>
-        <button onclick="CopyNumero()">
-            <p>Cel: (31) 97240-7179</p>
-        </button>
-    </div>
-    <div id="Logo">
-        <a href="https://github.com/AngaratoVardamir" target="_blank" rel="external"><img src="Ativos/imagem/Jpg/logo-Angarato.jpg" alt="Logo"></a>
-    </div>
-    <div id="Texto">
-        <h2>Olá, Pessoal</h2>
-        <h1>Sou <strong>Gustavo Augusto</strong></h1>
-        <h3>Estudante de Programação.</h3>
-        <h3>Brasileiro</h3>
-        <h3>Nascindo em 2004</h3>
-    </div>
-    <div id="Alinhamento_HP1">
+    <div id="Body2">
+        <div id="Botãos">
+            <button>
+                <a href="Ativos/PDF/CV.pdf" download="CV" type="application/pdf">
+                    <p>Baixa o CV</p>
+                </a>
+            </button>
+            <p id="res"></p>
+            <button onclick="CopyNumero()">
+                <p>Cel: (31) 97240-7179</p>
+            </button>
+        </div>
+        <div id="Logo">
+            <a href="https://github.com/AngaratoVardamir" target="_blank" rel="external"><img onmouseenter="segura()" onmouseout="solta()" src="Ativos/imagem/Jpg/logo-Angarato.jpg" alt="Logo"></a>
+        </div>
+        <div id="Texto">
+            <h2>Olá, Pessoal</h2>
+            <h1>Sou <strong>Gustavo Augusto</strong></h1>
+            <h3>Estudante de Programação.</h3>
+            <h3>Brasileiro</h3>
+            <h3>Nascindo em 2004</h3>
+        </div>
         <div id="Alinhamento_HP2">
             <div id="Habilidades">
                 <div class="Coluna">
@@ -76,13 +77,17 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="Apoie">
-        <h2>Apoie Meu Trabalho</h2>
-        <img src="Ativos/imagem/Png/QRcode.png" alt="QRcode" onclick="Didi()">
-    </div>
-    <div id="Rodapé">
-        <h3>@2024.Gustavo.Augusto/Angarato.Valdermi</h3>
+        
+        <div id="Apoie">
+            <h2>Apoie Meu Trabalho</h2>
+            <div id="qr">
+                <img src="Ativos/imagem/Png/QRcode.png" alt="QRcode" onclick="Didi()">
+            </div>
+            <h2>Clique para copia a Chave</h2>
+        </div>
+        <div id="Rodapé">
+            <h3>Gus191798@gmail.com</h3>
+        </div>
     </div>
 </body>
 </html>

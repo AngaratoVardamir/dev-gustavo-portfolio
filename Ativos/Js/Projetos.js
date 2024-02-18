@@ -13,3 +13,9 @@ function Didi(){
         alert('QRcode Copiado!!!')
     })
 }
+function segura(){
+    res.innerHTML = '<h2>GitHub</h2>'
+}
+function solta(){
+    res.innerHTML = '<h2></h2>'
+}

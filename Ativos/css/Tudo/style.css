@@ -14,17 +14,14 @@
     font-family: 'Elegantech';
     color: var(--CorBranco);
 }
-body{
+#Body2{
     background-image: url('../../imagem/Jpg/Cego.jpg');
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: absolute;
-    min-width: 450px;
-    min-height: 620px;
-    max-width: 1366px;
-    max-height: 630px;
+    padding: 2%;
 }
 .Col_Hab > img{
     width:16%;
@@ -37,28 +34,40 @@ button{
     padding: 8px;
     cursor: pointer;
 }
-a{
-    text-decoration: none;
+button:hover{
+    opacity: 0.9;
 }
-body > #Botãos{
+button:active{
+    opacity: 0.5;
+}
+a{
+    width: auto;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Botãos{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 2%;
 }
-body > #Botãos > button{
+#Botãos > button{
     margin: 2px;
     font-size: 2.0vw;
 }
-body > #Logo > a{
+#Logo{
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    flex-direction: column;
 }
-Body > #Logo > a > img{
-    width: 17%;
+#Logo > a > img{
+    width: 17vw;
     border-radius: 50%;
 }
 /* Textos */
@@ -86,7 +95,6 @@ strong{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 20px 40px 40px 40px;
     border-radius: 20% 0% 0% 20%;
     background-color: rgba(0, 217, 255, 0.068);
 }
@@ -100,7 +108,6 @@ strong{
     flex-direction: column;
     flex-wrap: wrap;
     background-color: rgba(0, 217, 255, 0.068);
-    padding: 20px 40px 10px 10px;
     border-radius: 0% 20% 20% 0%;
 }
 img{
@@ -124,8 +131,23 @@ img:active{
     align-items: center;
     flex-direction: column;
 }
+#qr > img{
+    background-color: #dec8f8;
+    width: 30vw;
+}
 #Rodapé{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+#res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    color: white;
+    background-color: #731DD8;
+    border-radius: 50%;
+    opacity: 0.7;
 }
