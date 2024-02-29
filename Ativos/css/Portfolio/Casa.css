@@ -70,6 +70,8 @@ header{
     justify-content: space-around;
     padding: 10px;
     
+    height: 10vh;
+    
 }
 .DivBotão{
     background-color: rgba(137, 43, 226, 0);
