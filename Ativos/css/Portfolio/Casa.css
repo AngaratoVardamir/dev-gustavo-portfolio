@@ -24,6 +24,22 @@
     font-family: 'ModernoTech';
     src: url('../../Fontes/elegantech/EleganTech-.ttf');
 }
+@keyframes borda{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+@keyframes foto{
+    from{
+        rotate: 360deg;
+    }
+    to{
+        rotate: 0deg;
+    }
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -33,6 +49,9 @@
 }
 a{
     text-decoration: none;
+    width: 15vw;
+    display: grid;
+    place-items: center;
 }
 h1,h2,strong{
     font-family: 'Gamer';
@@ -51,18 +70,14 @@ strong{
 }
 body{
     background-color: black;
-    background-image: url(../../imagem/Jpg/Cego.jpg);
+    background-image: url(../../imagem/Gif/Florestleveblue.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
+    backdrop-filter: blur(7px);
+    backdrop-filter: brightness(40%);
 
-    width: 96vw;
-    height: 100vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
 }
 header{
     display: flex;
@@ -70,12 +85,9 @@ header{
     justify-content: space-around;
     padding: 10px;
     
-    height: 10vh;
-    
 }
 .DivBotão{
     background-color: rgba(137, 43, 226, 0);
-    width: 15vw;
     display: grid;
     place-items: center;
 }
@@ -88,6 +100,7 @@ header{
 .Botão{
     height: 30px;
     width: 100px;
+
     color: var(--Cor2);
     background-color: var(--Cor8);
 
@@ -115,8 +128,37 @@ header{
     place-items: center;
 }
 .Foto{
+    display: grid;
+    place-items: center;
     border-radius: 50%;
     width: 15vw;
+}
+#Coitainer:hover .Foto{
+    animation-name: foto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#Coitainer{
+    background-color: rgb(43, 174, 226);
+    border-radius: 50%;
+    border-top: 4px solid var(--Cor1);
+    border-left: 4px solid var(--Cor2);
+    border-right: 4px solid var(--Cor1);
+    border-bottom: 4px solid var(--Cor2);
+    cursor: pointer;
+}
+#Coitainer:hover{
+    border-top: 4px solid var(--Cor2);
+    border-left: 4px solid var(--Cor1);
+    border-right: 4px solid var(--Cor2);
+    border-bottom: 4px solid var(--Cor1);
+
+    animation-name: borda;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#Coitainer:active{
+    border: 4px solid var(--Cor4);
 }
 /* Texto */
 .Texto{
@@ -130,33 +172,17 @@ header{
     color: var(--Cor3);
 }
 /* HP */
-.Foto{
-    border-top: 2px solid var(--Cor1);
-    border-left: 2px solid var(--Cor2);
-    border-right: 2px solid var(--Cor1);
-    border-bottom: 2px solid var(--Cor2);
-    cursor: pointer;
-}
-.Foto:hover{
-    border-top: 4px solid var(--Cor2);
-    border-left: 4px solid var(--Cor1);
-    border-right: 4px solid var(--Cor2);
-    border-bottom: 4px solid var(--Cor1);
-}
-.Foto:active{
-    border: 3px solid var(--Cor4);
-}
 .HP{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--Cor3_9);
 }
 .Habilidades{
     display: grid;
     place-items: center;
-    border-radius: 20%;
+    background-color: var(--Cor3_9);
+    
     
 }
 #Caixa1 > div > svg{
@@ -179,7 +205,7 @@ header{
     place-items: center;
     background-color: var(--Cor4_9);
     
-
+    
 }
 #Caixa2{
     display: flex;
