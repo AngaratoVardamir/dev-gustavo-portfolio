@@ -1,0 +1,353 @@
+:root{
+    /* Var de Cores */
+    --cor01:#FBFBFD;
+    --cor02:#d05be0;
+    --cor03:#b34fcc;
+    --cor04:#6c3283;
+    --cor05:#645be0;
+    --cor06:#6a4fcc;
+    --cor07:#413283;
+    --cor08:#333333;
+    --cor09:#222222;
+    --cor00:#232323;
+    --cor10:#141414;
+    /* Var de valores */
+    --Alt-DFDP:170px;
+    --Lar-DFDP:170px;
+}
+/* Fontes */
+@font-face{
+    font-family: "TextoAlien";
+    src: url('../Assets/Fonts/rebirth-ultra-maisfontes.92f2/rebirth-ultra.ttf');
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: var(--cor09);
+}
+/* Cabeça */
+header{
+    background-color: var(--cor04);
+    height: 130px;
+    
+}
+#Ativador-da-Janela{
+    z-index: 444;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 22%;
+    top: 2%;
+}
+#Ativar-Desativar{
+    width: 100%;
+    height: 100%;
+    opacity: .0;
+    position: absolute;
+    left: 0%;
+    
+    cursor: pointer;
+}
+#Ativador-da-Janela > svg{
+    z-index: 443;
+    width: 100%;
+    height: 100%;
+    fill: var(--cor01);
+}
+/* Foto de Perfil */
+#Alinhando-o-Perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 32px;
+}
+#Foto-de-Perfil-Borda{
+    position: relative;
+    height: var(--Alt-DFDP);
+    width: var(--Lar-DFDP);
+    border-radius: 50%;
+    border: 10px solid var(--cor10);
+    box-shadow: 0px 0px 30px var(--cor08);
+}
+#Foto-de-Perfil{
+    height: var(--Alt-DFDP);
+    width: var(--Lar-DFDP);
+    background-color: var(--cor03);
+    border-radius: 50%;
+    cursor: pointer;
+    
+    background-image: url('../Assets/Img/logo-Angarato.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.FotoSelect{
+    background-image: url('../Assets/Img/1705448111663.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.Ball{
+    height: 20px;
+    width: 20px;
+    background-color: var(--cor03);
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid black;
+    box-shadow: 0px 0px 30px var(--cor02);
+}
+.BallSelect{
+    background-color: var(--cor02) !important;
+    box-shadow: 0px 0px 40px #fbfbfd !important;
+    border: 2px solid rgb(44, 44, 44);
+}
+#Ball1{
+    bottom: 97%;
+    left: 43%;
+}
+#Ball2{
+    top: 43%;
+    right: 97%;
+}
+#Ball3{
+    top: 43%;
+    left: 97%;
+}
+#Ball4{
+    top: 97%;
+    left: 43%;
+}
+/* Botãoes */
+a{
+    text-decoration: none;
+    color: var(--cor01);
+}
+.Botão-da-Cabeça{
+    height: 40px;
+    width:20%;
+    position: absolute;
+    font-size: 15px;
+
+    background-color: var(--cor08);
+    border-color: var(--cor03);
+    color: var(--cor01);
+    cursor: pointer;
+}
+.BotãoSelet{
+    background-color: var(--cor03);
+    border-color: var(--cor08);
+    color: var(--cor01);
+}
+.Botão-da-Cabeça:active{
+    background-color: var(--cor09);
+    color: #818181;
+    border-color: #8d0dad;
+}
+#Botão1{
+    top: 107px;
+    left: 4%;
+}
+#Botão2{
+    top: 107px;
+    right: 4%;
+}
+/* Corpo */
+main{
+    width: 100%;
+    height: 100%;
+}
+#Alinhando-do-Texto{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    margin: 20px;
+}
+#Texto{
+    color: var(--cor01);
+    font-size: clamp(1.7em, 3vw, 4em);
+    font-family: Arial, Helvetica, monospace;
+}
+#Texto > h2 > strong{
+    font-family: "TextoAlien";
+    color: var(--cor02);
+}
+/* QR code */
+#Alinhamento-QR-CODE{
+    display: flex;
+    height: 6vh;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#QR-CODE{
+    background-color: var(--cor03);
+    width: clamp(8.7em, 4vw, 20em);
+    height: clamp(8.7em, 4vw, 20em);
+
+    background-image: url('../Assets/Img/QRcode.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    border: 10px solid var(--cor08);
+}
+#QR-CODE:active{
+    border-color: #8d0dad;
+}
+/* Pé */
+footer{
+    height: 5vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--cor01);
+}
+/* Janela */
+.Janela{
+    z-index: 333;
+    background-color: #3e1e4b;
+    border: 2px solid var(--cor08);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 99vh;
+}
+
+#JanelaAbrerto{
+    box-shadow: -8px 0px 6px rgba(0, 0, 0, 0.253);
+    width: 50vw;
+
+}
+
+#JanelaFechando{
+    width: 0vw;
+
+}
+#Conteudo-Jan{
+    position: relative;
+    height: 100%;
+}
+/* Janel aAbrerta */
+/* Janel Cabeça */
+#Cabeça-Jan{
+    position: relative;
+    background-color: var(--cor03);
+    width: 100%;
+    height: 22%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.Icon{
+    width: clamp(6.0em, 6vw, 20em);
+    height: clamp(4.0px, 8vw, 6em);
+    background-color: #9111e7;
+    border-radius: 50%;
+    margin: 1%;
+}
+.Icon:hover{
+    background-color: var(--cor08);
+    border-radius: 50%;
+    margin: 1%;
+}
+.Icon > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.Icon > a > svg{
+    width: 70%;
+    fill: var(--cor08);
+}
+.Icon:hover > a > svg{
+    fill: var(--cor01);
+}
+/* Janel Corpo */
+/* Janel Corpo Habildades */
+.HP{
+    position: relative;
+    background-color: var(--cor03);
+    width: 100%;
+    
+    margin: 10px 0%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.HP > h1{
+    background-color: var(--cor04);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Linha{
+    
+    width: 100%;
+    margin: 10px 0%;
+
+    display: flex;
+    justify-content: space-around;
+}
+.Linha > span{
+    background-color: var(--cor08);
+    width: 32%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+span > i{
+    font-size: 200%;
+    color: var(--cor03);
+}
+/* Janel Corpo Projetos */
+#Projetos-Jan > span{
+    display: flex;
+    flex-direction: row;
+}
+.Projector{
+    background-color: var(--cor01);
+    background-image: url("../Assets/Img/GifEmbeve1.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    margin: 2px;
+    width: 20vw;
+    height: clamp(4.0em, 10vw, 20em);
+    border: 2px solid rgb(160, 160, 160);
+}
+.Projector:hover{
+    border-color: var(--cor05);
+}
+/* Animação janela*/
+
+@keyframes JanelaAnimAbr{
+    from{
+        width: 0vw;
+        opacity: .0;
+    }
+    to{
+        width: 50vw;
+        opacity: 1.0;
+    }
+}
+@keyframes JanelaAnimFch{
+    from{
+        width: 50vw;
+        opacity: 1.0;
+    }
+    to{
+        width: 0vw;
+        opacity: .0;
+    }
+}
