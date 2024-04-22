@@ -1,157 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Links Css -->
+    <!-- Css de Tudo -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Metas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortifólioV3.02</title>
-    <link rel="stylesheet" href="Css/style.css">
-    <link rel="shortcut icon" href="Assets/Img/logo-Angarato-transformed-removebg-preview.ico" type="image/x-icon">
-</head>
-<!-- O Site -->
-<body>
-    <!-- A Cabeça do Site -->
-    <header id="Cabeça">
-        <div id="Ativador-da-Janela">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M16 132h416c8.8 0 16-7.2 16-16V76c0-8.8-7.2-16-16-16H16C7.2 60 0 67.2 0 76v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16z"/></svg>
-
-            <input type="button" name="Ativar-Desativar" id="Ativar-Desativar">
-        </div>
-        <div id="Alinhando-o-Perfil">
-            <div id="Elemento-de-movimento-para-perfil">
-                <div id="Foto-de-Perfil-Borda">
-                    <div class="Ball" id="Ball1"></div>
-                    <div class="Ball" id="Ball2"></div>
-                    <div id="Foto-de-Perfil" class="Foto-de-Perfil">
-                
-                    </div>
-                    <div class="Ball" id="Ball3"></div>
-                    <div class="Ball" id="Ball4"></div>
-                </div>
-            </div>
-        </div>
-        <button class="Botão-da-Cabeça" id="Botão1"><a download="Currículo-Gustavo.AuGusto" href="Assets/PDF/CV.pdf" target='_blank'>BAIXAR O CV</a></button>
-        <button class="Botão-da-Cabeça" id="Botão2">COPIAR NÚMERO</button>
-    </header>
-    <!-- O Corpo do Site -->
-    <main>
-        <div id="Alinhando-do-Texto">
-            <div id="Texto">
-                <h2>
-                    Olá, Pessoal <br>
-                    Sou <strong>Gustavo Augusto</strong>
-                </h2>
-                <p>
-                    Estudante de Programação
-                </p>
-                <p>
-                    Brasileiro
-                </p>
-                <p>
-                    Nascindo em 2004
-                </p>
-            </div>
-        </div>
-        <div id="Alinhamento-QR-CODE">
-            <div id="QR-CODE">
-
-            </div>
-        </div>
-    </main>
-    <!-- O pé do Site -->
-    <footer>
-        <p>
-            Site Criando por Gustavo Augusto/ Mr.Angaráto
-        </p>
-    </footer>
-    <!-- Janela -->
-    <div id="JanelaFechando" class="Janela">
-        <div id="Conteudo-Jan">
-            <div id='Cabeça-Jan' class='JanTodos'>
-                <div class='Icon' id='Facebook'>
-                    <a rel='external' target='_blank' href='https://www.facebook.com/profile.php?id=100087432616028'>
-                        <svg id="FaceJs"  style="width: 45%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"></svg>
-                    </a>
-                </div>
-                <div class='Icon' id='YouTube'>
-                    <a rel='external' target='_blank' href='https://youtube.com/@AngaratoVardamir?si=O3pR6dYG_-lgfQY-'>
-                        <svg id="YouJs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"></svg>
-                    </a>
-                </div>
-                <div class='Icon' id='Tiktok'>
-                    <a rel='external' target='_blank' href='https://www.tiktok.com/@mr..angarato.vard?is_from_webapp=1&sender_device=pc'>
-                        <svg id="TikJs"  style="width: 60%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"></svg>
-                    </a>
-                </div>
-                <div class='Icon' id='Linkdin'>
-                    <a rel='external' target='_blank' href='https://www.linkedin.com/in/gustavo-augusto-2b384024b/'>
-                        <svg id="LinJs" style="width: 60%;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"></svg>
-                    </a>
-                </div>
-                <div class='Icon' id='Github'>
-                    <a rel='external' target='_blank' href='https://github.com/AngaratoVardamir'>
-                        <svg id="GitHJs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"></svg>
-                    </a>
-                </div>
-            </div>
-            <div id='Habilidades-Jan' class='JanTodos HP'>
-                <h1>Habilidades</h1>
-                <span class='Linha' id='Linha1'>
-                    <span id='GITHUBICON'>
-                        <i class="fa-brands fa-github"></i>
-                    </span>
-                    <span id='JAVASCRIPTICON'>
-                        <i class="fa-brands fa-js"></i>
-                    </span>
-                    <span id='HTMLICON'>
-                        <i class="fa-brands fa-html5"></i>
-                    </span>
-                </span>
-                <span class='Linha' id='Linha2'>
-                    <span id='GITICON'>
-                        <i class="fa-brands fa-git-alt"></i>
-                    </span>
-                    <span id='PYTHONICON'>
-                        <i class="fa-brands fa-python"></i>
-                    </span>
-                    <span id='CSSICON'>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </span>
-                </span>
-            </div>
-            <div id='Projetos-Jan' class='JanTodos HP'>
-                <h1>Projetos</h1>
-                <span>
-                    <a href="#">
-                        <div class='Projector' id='Proj1'>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class='Projector' id='Proj2'>
-                        </div>
-                    </a>
-                </span>
-                <span>
-                    <a href="#">
-                        <div class='Projector' id='Proj3'>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class='Projector' id='Proj4'>
-                        </div>
-                    </a>
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Blibiotecas -->
+    <!-- Titulo -->
+    <title>Gustavo_Augusto.Pv4</title>
+    <link rel="shortcut icon" href="Assets/Img/Logotipo.ico" type="image/x-icon">
+    <!-- icones -->
     <script src="https://kit.fontawesome.com/af90d27089.js" crossorigin="anonymous"></script>
-    <!-- Blibiotecas feitos por mim-->
-    <script id="IconesJan" src="Js/Icones.Js">
-    </script>
-    <!-- Scripts --> 
-    <script src="Js/Ativos.js"></script>
-    <script src="Js/Perfil.js"></script>
-    <script src="Js/Janela.Js"></script>
+    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+</head>
+<body>
+    <div id="Tela01" class="Tela">
+        <h1>Gustavo Augusto</h1>
+        <p>Alexandrino Oliveira</p>
+        <h2>Programador</h2>
+        <div>
+            <span id="Habilidade" class="Habilidade">
+                <button type="button" class="Botão" id="Esquerda_Certificados">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <span id="Skills" class="Skills">
+                    <span id="Tela_Movimento">
+                        <div id="Python" class="atributos">
+                            <p>Python</p>
+                        </div>
+                        <div id="JavaScript" class="atributos">
+                            <p>JavaScript</p>
+                        </div>
+                        <div id="Html_css" class="atributos">
+                            <p>HTML e CSS</p>
+                        </div>
+                    </span>
+                </span>
+                <button type="button" class="Botão" id="Direita_Certificados">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </span>
+        </div>
+        <span id="Botões">
+            <input type="button" value="Número de Tel">
+            <input type="button" value="Currículo">
+        </span>
+    </div>
+    <div id="Tela02" class="Tela">
+        <div id="Lua">
+            <i class="fa-solid fa-bars" id="bars"></i>
+        </div>
+        <img src="Assets/Img/Programador_e_lobo.png" alt="Programador_e_lobo" id="Imagem_Personagem">
+    </div>
 </body>
+<div id="Tela_Certificando">
+    <span>
+        <h1>Certificandos Python</h1>
+        <h2 id="Fechar_JanelaPai"><strong id="Fechar_Janela">X</strong></h1>
+    </span>
+    <div id="Caixa_Mudança">
+        <button type="button" class="Botão" id="Esquerda_CertificadosTela">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <a href="Assets/PDF/Gustavo-Augusto-Python-3-8211-Mundo-1-40-Horas-Certificado-Curso-em-Video.pdf" target="_blank" id="Link_Certificado">
+            <div id="Certificando">
+                <p id="Modulo">C1</p>
+            </div>
+        </a>
+
+        <button type="button" class="Botão" id="Direita_CertificadosTela">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+    <h2 id="Contador_Certificados">0/0</h2>
+</div>
 </html>
+<script src="Js/Interanção.js"></script>
