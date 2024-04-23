@@ -25,6 +25,14 @@ const Python = document.getElementById("Python");
 Python.addEventListener("mousedown",()=>{
     PythonFu()
 })
+const JS = document.getElementById("JavaScript");
+JS.addEventListener("mousedown",()=>{
+    JavaScriptFu()
+})
+const CssHtml = document.getElementById("Html_css");
+CssHtml.addEventListener("mousedown",()=>{
+    Html_CssFU()
+})
 // Lua
 const Lua = document.getElementById("Lua");
 const Imagem_Personagem = document.getElementById("Imagem_Personagem");
@@ -52,11 +60,14 @@ const Contador_Certificados = document.getElementById("Contador_Certificados");
 const Link_Certificado = document.getElementById("Link_Certificado");
 const Fechar_Janela = document.getElementById("Fechar_JanelaPai");
 const Modulo = document.getElementById("Modulo");
-
-let Certificados = 0
+const text_Titulo = document.getElementById("text_Titulo");
 
 function PythonFu(){
+    text_Titulo.innerHTML = ("Certificandos Python");
+    let Certificados = 0
     Tela_Certificando.style.display = ('flex');
+    Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado-Py-Curso-em-video.png')");
+
     Fechar_Janela.addEventListener("click",()=>{
         Tela_Certificando.style.display = ('none');
         Certificados = 1;
@@ -65,13 +76,10 @@ function PythonFu(){
     function MudarImg(){
         Modulo.innerHTML = (`C${Certificados}`);
         if(Certificados == 1){
-            Certificandoimg.style.backgroundimage = ("url('../Assets/Img/Certificados/PythonM1.png')");
             Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Python-3-8211-Mundo-1-40-Horas-Certificado-Curso-em-Video.pdf");
     
         }
         if(Certificados == 2){
-            Certificandoimg.style.backgroundimage = (`url("../Assets/Img/Certificados/PythonM1.png")`);
-    
             Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Python-3-8211-Mundo-2-40-Horas-Certificado-Curso-em-Video.pdf");
         }
     }
@@ -90,5 +98,84 @@ function PythonFu(){
             MudarImg()
         }
         Contador_Certificados.innerHTML = (`${Certificados}/2`)
+    })
+}
+
+function JavaScriptFu(){
+    text_Titulo.innerHTML = ("Certificandos JavaScript");
+    let Certificados = 0
+    Tela_Certificando.style.display = ('flex');
+    Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado Js Curso em video.png')");
+
+    Fechar_Janela.addEventListener("click",()=>{
+        Tela_Certificando.style.display = ('none');
+        Certificados = 1;
+        Modulo.innerHTML = (`C${Certificados}`);
+    })
+    function MudarImg(){
+        Modulo.innerHTML = (`C${Certificados}`);
+        if(Certificados == 1){
+            Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Javascript-40-Horas-Certificado-Curso-em-Video.pdf");
+    
+        }
+    }
+    
+    Contador_Certificados.innerHTML = ("1/1")
+    Esquerda_CTelaModal.addEventListener("mousedown",()=>{
+        if (Certificados > 1){
+            MudarImg()
+        }
+        Contador_Certificados.innerHTML = (`${Certificados}/1`)
+    })
+    Direita_CTelaModal.addEventListener("mousedown",()=>{
+        if (Certificados < 1){
+            Certificados++
+            MudarImg()
+        }
+        Contador_Certificados.innerHTML = (`${Certificados}/1`)
+    })
+}
+
+function Html_CssFU(){
+    text_Titulo.innerHTML = ("Certificandos JavaScript");
+    let Certificados = 0
+    Tela_Certificando.style.display = ('flex');
+    Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado-html-css-Curso-em-video.png')");
+
+    Fechar_Janela.addEventListener("click",()=>{
+        Tela_Certificando.style.display = ('none');
+        Certificados = 1;
+        Modulo.innerHTML = (`C${Certificados}`);
+    })
+    function MudarImg(){
+        Modulo.innerHTML = (`C${Certificados}`);
+        if(Certificados == 1){
+            Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Curso-HTML5-e-CSS3-modulo-1-de-5-40-HORAS-Certificado-Curso-em-Video.pdf");
+    
+        }
+        if(Certificados == 2){
+            Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Curso-HTML5-e-CSS3-modulo-2-de-5-40-HORAS-Certificado-Curso-em-Video.pdf");
+    
+        }
+        if(Certificados == 3){
+            Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Curso-HTML5-e-CSS3-modulo-3-de-5-40-HORAS-Certificado-Curso-em-Video.pdf");
+    
+        }
+    }
+    
+    Contador_Certificados.innerHTML = ("1/3")
+    Esquerda_CTelaModal.addEventListener("mousedown",()=>{
+        if (Certificados > 1){
+            Certificados--
+            MudarImg()
+        }
+        Contador_Certificados.innerHTML = (`${Certificados}/3`)
+    })
+    Direita_CTelaModal.addEventListener("mousedown",()=>{
+        if (Certificados < 3){
+            Certificados++
+            MudarImg()
+        }
+        Contador_Certificados.innerHTML = (`${Certificados}/3`)
     })
 }
