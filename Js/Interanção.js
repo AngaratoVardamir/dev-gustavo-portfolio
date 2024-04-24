@@ -52,7 +52,7 @@ Lua.addEventListener("mousedown",()=>{
         Corpo.style.flexDirection = ('row');
     }
     else{
-        Imagem_Personagem.src = ("Assets/Img/_b7fc8120-f814-4f3d-b368-10ef5e0d7395-removebg-preview.png");
+        Imagem_Personagem.src = ("Assets/Img/Lobo_programado2.png");
         bars.style.color = ("#b72be2");
         Ativador++
         TelaProj.style.display = ('flex');
@@ -113,32 +113,14 @@ function PythonFu(){
 function JavaScriptFu(){
     Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Javascript-40-Horas-Certificado-Curso-em-Video.pdf");
     text_Titulo.innerHTML = ("Certificandos JavaScript");
-    let Certificados = 1
     Tela_Certificando.style.display = ('flex');
     Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado Js Curso em video.png')");
 
     Fechar_Janela.addEventListener("click",()=>{
         Tela_Certificando.style.display = ('none');
-        Certificados = 1;
-        Modulo.innerHTML = (`C${Certificados}`);
+        Modulo.innerHTML = (`C1`);
     })
-    function MudarImg(){
-        Modulo.innerHTML = (`C${Certificados}`);
-    }
-    
     Contador_Certificados.innerHTML = ("1/1")
-    Esquerda_CTelaModal.addEventListener("mousedown",()=>{
-        if (Certificados > 1){
-            MudarImg()
-        }
-        Contador_Certificados.innerHTML = (`${Certificados}/1`)
-    })
-    Direita_CTelaModal.addEventListener("mousedown",()=>{
-        if (Certificados < 1){
-            MudarImg()
-        }
-        Contador_Certificados.innerHTML = (`${Certificados}/1`)
-    })
 }
 
 function Html_CssFU(){
