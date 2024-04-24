@@ -1,3 +1,4 @@
+@charset "utf-8";
 *{
     padding: 0%;
     margin: 0%;
@@ -12,6 +13,68 @@ body{
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
 }
+#Tela00{
+    color: white;
+    text-shadow: 1px 1px 20px #b72be2;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-image: url("../Assets/Img/LobosMotanha.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Janela_Fundo{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Janela_Fundo > button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#Janela_Proj{
+    border: 1px solid white;
+    background-color: cornflowerblue;
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+}
+#Linha_Fundo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 100%;
+}
+#Linha_Fundo > a{
+    background-color: rgb(190, 190, 190);
+    border-radius: 50%;
+    display: flex;
+    margin: 2px;
+}
+#Linha_Fundo > a > img{
+    margin: 5px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+#Linha_Fundo > a > img:hover{
+    transform: translate(0%, -10%);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.705);
+}
+/* Tela 01 */
 #Tela01{
     overflow: hidden;
     background: rgb(105, 105, 105);
@@ -29,12 +92,15 @@ body{
     align-items: center;
     transition: .5s;
 }
+#Tela01 > h2{
+    margin: 10px;
+    text-shadow: 2px 2px 2px rgb(235, 17, 255);
+}
 #Habilidade{
-    background-color: rgba(43, 168, 226, 0.671);
     width: 60vw;
     height: 300px;
     display: flex;
-    margin: 30px 0px;
+    margin: 20px 0px;
     justify-content: center;
     align-items: center;
 }
@@ -73,6 +139,9 @@ body{
     justify-content: center;
     align-items: flex-end;
     transition:.2s;
+}
+.atributos:hover{
+    box-shadow: 0px 0px 10px 1px #b72be2;
 }
 #Html_css{
     background-image: url("../Assets/Img/png-css-html-removebg-preview.png");

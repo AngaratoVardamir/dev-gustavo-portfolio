@@ -34,6 +34,9 @@ CssHtml.addEventListener("mousedown",()=>{
     Html_CssFU()
 })
 // Lua
+const Corpo = document.querySelector("body");
+const TelaProj = document.getElementById("Tela00");
+const TelaHabi = document.getElementById("Tela01");
 const Lua = document.getElementById("Lua");
 const Imagem_Personagem = document.getElementById("Imagem_Personagem");
 const bars = document.getElementById("bars");
@@ -44,11 +47,17 @@ Lua.addEventListener("mousedown",()=>{
         Imagem_Personagem.src = ("Assets/Img/Programador_e_lobo.png");
         bars.style.color = ("rgb(0, 110, 255)");
         Ativador--
+        TelaProj.style.display = ('none');
+        TelaHabi.style.display = ('flex');
+        Corpo.style.flexDirection = ('row');
     }
     else{
         Imagem_Personagem.src = ("Assets/Img/_b7fc8120-f814-4f3d-b368-10ef5e0d7395-removebg-preview.png");
         bars.style.color = ("#b72be2");
         Ativador++
+        TelaProj.style.display = ('flex');
+        TelaHabi.style.display = ('none');
+        Corpo.style.flexDirection = ('row-reverse');
     }
 })
 //Tela modal certificado
@@ -102,8 +111,9 @@ function PythonFu(){
 }
 
 function JavaScriptFu(){
+    Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Javascript-40-Horas-Certificado-Curso-em-Video.pdf");
     text_Titulo.innerHTML = ("Certificandos JavaScript");
-    let Certificados = 0
+    let Certificados = 1
     Tela_Certificando.style.display = ('flex');
     Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado Js Curso em video.png')");
 
@@ -114,10 +124,6 @@ function JavaScriptFu(){
     })
     function MudarImg(){
         Modulo.innerHTML = (`C${Certificados}`);
-        if(Certificados == 1){
-            Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Javascript-40-Horas-Certificado-Curso-em-Video.pdf");
-    
-        }
     }
     
     Contador_Certificados.innerHTML = ("1/1")
@@ -129,7 +135,6 @@ function JavaScriptFu(){
     })
     Direita_CTelaModal.addEventListener("mousedown",()=>{
         if (Certificados < 1){
-            Certificados++
             MudarImg()
         }
         Contador_Certificados.innerHTML = (`${Certificados}/1`)
@@ -137,7 +142,7 @@ function JavaScriptFu(){
 }
 
 function Html_CssFU(){
-    text_Titulo.innerHTML = ("Certificandos JavaScript");
+    text_Titulo.innerHTML = ("Certificandos Html e Css");
     let Certificados = 0
     Tela_Certificando.style.display = ('flex');
     Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado-html-css-Curso-em-video.png')");
@@ -179,3 +184,10 @@ function Html_CssFU(){
         Contador_Certificados.innerHTML = (`${Certificados}/3`)
     })
 }
+//Botões
+const CopyNum = document.getElementById("CopyNum");
+const NumeroTel = ("31 9 7240-7179");
+CopyNum.addEventListener("click",()=>{
+    navigator.clipboard.writeText(NumeroTel);
+    alert("Numero de Telefone Copiado");
+})
