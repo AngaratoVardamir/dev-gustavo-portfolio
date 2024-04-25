@@ -72,7 +72,7 @@ const Modulo = document.getElementById("Modulo");
 const text_Titulo = document.getElementById("text_Titulo");
 
 function PythonFu(){
-    text_Titulo.innerHTML = ("Certificandos Python");
+    text_Titulo.innerHTML = ("Certificados Python");
     let Certificados = 0
     Tela_Certificando.style.display = ('flex');
     Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado-Py-Curso-em-video.png')");
@@ -112,7 +112,7 @@ function PythonFu(){
 
 function JavaScriptFu(){
     Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Javascript-40-Horas-Certificado-Curso-em-Video.pdf");
-    text_Titulo.innerHTML = ("Certificandos JavaScript");
+    text_Titulo.innerHTML = ("Certificados JavaScript");
     Tela_Certificando.style.display = ('flex');
     Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado Js Curso em video.png')");
 
@@ -124,7 +124,7 @@ function JavaScriptFu(){
 }
 
 function Html_CssFU(){
-    text_Titulo.innerHTML = ("Certificandos Html e Css");
+    text_Titulo.innerHTML = ("Certificados Html e Css");
     let Certificados = 0
     Tela_Certificando.style.display = ('flex');
     Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado-html-css-Curso-em-video.png')");

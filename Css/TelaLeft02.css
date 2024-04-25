@@ -41,6 +41,7 @@
     box-shadow: 0px 0px 10px rgb(235, 17, 255);
 }
 #Linha_Fundo{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -57,7 +58,7 @@
 }
 #Linha_Fundo > a > img{
     margin: 5px;
-    width: 40px;
+    width: 28px;
     border-radius: 50%;
     cursor: pointer;
     transition: .2s;
