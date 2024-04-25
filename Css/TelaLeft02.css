@@ -1,0 +1,68 @@
+#Tela00{
+    color: white;
+    text-shadow: 1px 1px 20px #b72be2;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-image: url("../Assets/Img/LobosMotanha.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Janela_Fundo{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Janela_Fundo > button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#Janela_Proj{
+    border: 1px solid white;
+    background-color: cornflowerblue;
+    background-image: url("../Assets/Img/GifEmbeve1.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 160px;
+    height: 200px;
+    border-radius: 10px;
+}
+#Janela_Proj:hover{
+    box-shadow: 0px 0px 10px rgb(235, 17, 255);
+}
+#Linha_Fundo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    width: 100%;
+}
+#Linha_Fundo > a{
+    background-color: rgb(190, 190, 190);
+    border-radius: 50%;
+    display: flex;
+    margin: 2px;
+}
+#Linha_Fundo > a > img{
+    margin: 5px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+#Linha_Fundo > a > img:hover{
+    transform: translate(0%, -10%);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.705);
+}
