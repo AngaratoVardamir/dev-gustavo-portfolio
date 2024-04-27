@@ -9,14 +9,14 @@ let contador = 0
 // mover icone
 Esquerda_CT.addEventListener("mousedown",()=>{
     if ( contador < 140){
-        contador+=40
+        contador+=130
     }
     Tela_Movimento.style.transform = (`translate(${contador}px`);
 })
 
 Direita_CT.addEventListener("mousedown",()=>{
     if ( contador > -140){
-        contador-=40
+        contador-=130
     }
     Tela_Movimento.style.transform = (`translate(${contador}px`);
 })
@@ -73,13 +73,12 @@ const text_Titulo = document.getElementById("text_Titulo");
 
 function PythonFu(){
     text_Titulo.innerHTML = ("Certificados Python");
-    let Certificados = 0
+    let Certificados = 1
     Tela_Certificando.style.display = ('flex');
     Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado-Py-Curso-em-video.png')");
 
     Fechar_Janela.addEventListener("click",()=>{
         Tela_Certificando.style.display = ('none');
-        Certificados = 1;
         Modulo.innerHTML = (`C${Certificados}`);
     })
     function MudarImg(){
@@ -125,13 +124,12 @@ function JavaScriptFu(){
 
 function Html_CssFU(){
     text_Titulo.innerHTML = ("Certificados Html e Css");
-    let Certificados = 0
+    let Certificados = 1
     Tela_Certificando.style.display = ('flex');
     Certificandoimg.style.backgroundImage = ("url('Assets/Img/Certificados/Certificado-html-css-Curso-em-video.png')");
 
     Fechar_Janela.addEventListener("click",()=>{
         Tela_Certificando.style.display = ('none');
-        Certificados = 1;
         Modulo.innerHTML = (`C${Certificados}`);
     })
     function MudarImg(){
@@ -148,22 +146,26 @@ function Html_CssFU(){
             Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Curso-HTML5-e-CSS3-modulo-3-de-5-40-HORAS-Certificado-Curso-em-Video.pdf");
     
         }
+        if(Certificados == 4){
+            Link_Certificado.href = ("Assets/PDF/Gustavo-Augusto-Curso-HTML5-e-CSS3-modulo-4-de-5-40-HORAS-Certificado-Curso-em-Video.pdf");
+    
+        }
     }
     
-    Contador_Certificados.innerHTML = ("1/3")
+    Contador_Certificados.innerHTML = ("1/4")
     Esquerda_CTelaModal.addEventListener("mousedown",()=>{
         if (Certificados > 1){
             Certificados--
             MudarImg()
         }
-        Contador_Certificados.innerHTML = (`${Certificados}/3`)
+        Contador_Certificados.innerHTML = (`${Certificados}/4`)
     })
     Direita_CTelaModal.addEventListener("mousedown",()=>{
-        if (Certificados < 3){
+        if (Certificados < 4){
             Certificados++
             MudarImg()
         }
-        Contador_Certificados.innerHTML = (`${Certificados}/3`)
+        Contador_Certificados.innerHTML = (`${Certificados}/4`)
     })
 }
 //Botões
