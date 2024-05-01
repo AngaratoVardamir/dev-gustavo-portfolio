@@ -26,10 +26,16 @@
     border-radius: 10px;
     cursor: pointer;
 }
+#Janela_Titulo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #Janela_Proj{
     border: 1px solid white;
     background-color: cornflowerblue;
-    background-image: url("../Assets/Img/GifEmbeve1.gif");
+    background-image: url("../Assets/Img/JogoPPT.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
