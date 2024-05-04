@@ -37,8 +37,8 @@
     background-color: cornflowerblue;
     background-image: url("../Assets/Img/JogoPPT.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: center top;
     width: 160px;
     height: 200px;
     border-radius: 10px;
