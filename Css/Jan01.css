@@ -1,0 +1,82 @@
+/*Certificados*/
+#Tela_Certificando{
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.637);
+    backdrop-filter: blur(14px);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+#Tela_Certificando > span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Tela_Certificando > span > h2{
+    background-color: rgb(0, 174, 255);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid;
+    transition: .2s;
+}
+#Tela_Certificando > span > h2:hover{
+    background-color: #232323;
+}
+h2:hover > #Fechar_Janela{
+    color: rgb(0, 183, 255);
+}
+h2:active > #Fechar_Janela{
+    color: rgb(140, 0, 255);
+}
+#Fechar_Janela{
+    color: rgb(255, 0, 119);
+}
+#Caixa_Mudança{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(29, 29, 29, 0.753);
+    border-radius: 20px;
+    width: 420px;
+    height: 260px;
+}
+#Certificando{
+    width: 300px;
+    height: 220px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(0, 110, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 4em;
+    transition: .2s;
+}
+#Certificando:hover{
+    box-shadow: 0px 0px 10px rgb(0, 102, 255);
+}
+#Certificando > p{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(0, 80, 252);
+    margin: 5px;
+}

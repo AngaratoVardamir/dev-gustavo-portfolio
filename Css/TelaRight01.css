@@ -1,0 +1,52 @@
+/* Tela 2 */
+#Tela02{
+    overflow: hidden;
+    background: rgb(148, 148, 148);
+    background-image: url("../Assets/Img/Arvore_da_Esperaça.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    
+    width: 40vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid black;
+    transition: .5s;
+}
+#Tela02 > #Lua{
+    position: absolute;
+    top: 4%;
+    background-color: white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+#Tela02 > #Lua:hover{
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.452);
+    cursor: pointer;
+}
+#Tela02 > #Lua:active{
+    background-color: rgb(0, 140, 255);
+    box-shadow: 0px 0px 20px 10px rgba(0, 217, 255, 0.452);
+}
+#bars{
+    transform: rotate(30deg);
+    font-size: 40px;
+    color: rgb(0, 110, 255);
+    transition: .3s;
+}
+#Lua:active > #bars{
+    font-size: 50px;
+    transform: rotate(90deg);
+}
+#Tela02 > img{
+    position: absolute;
+    width: 38%;
+}

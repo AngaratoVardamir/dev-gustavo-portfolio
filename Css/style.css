@@ -1,0 +1,41 @@
+@charset "utf-8";
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+body{
+    background-color: #232323;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Telas Grande*/
+@media only screen and (max-height: 550px){
+    #Tela02 > img{
+        width: 45vh;
+    }
+}
+@media only screen and (min-width: 1000px){
+    #Tela02 > img{
+        width: 28%;
+    }
+    #Janela_Proj{
+        width: 260px;
+        height: 300px;
+    }
+    #Linha_Fundo > a{
+        margin: 10px;
+    }
+    #Linha_Fundo > a > img{
+        width: 70px;
+        margin: 4px;
+    }
+    #Janela_Fundo > button{
+        padding: 20px;
+        margin: 30px;
+    }
+}
