@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #232323;
+}
+#Parallax{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+#Parallax2{
+    flex: auto;
+    background-image: url("../../assets/images/Floresta.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}

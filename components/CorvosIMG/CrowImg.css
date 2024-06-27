@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    background-color: rgb(26, 26, 26);
+    height: 100%;
+    width: 100%;
+}
+@keyframes Corvo1{
+    0%{
+        left: -100%;
+        top: -100px;
+    }
+    100%{
+        left: 100%;
+        top: 80px;
+    }
+}
+@keyframes Corvo2{
+    0%{
+        left: 100%;
+        top: 80px;
+    }
+    100%{
+        left: -100%;
+        top: -100px;
+    }
+}
+@keyframes Cat{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@keyframes Pokemon{
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: -100%;
+    } 
+}
+#CrowIMG{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: block;
+    overflow: hidden;
+}
+#CrowIMG > img{
+    position: absolute;
+    animation-iteration-count: infinite;
+}
+#Corvo1{
+    transform: scaleX(-1);
+    animation-name: Corvo1;
+    animation-duration: 5s;
+}
+#Corvo2{
+    animation-name: Corvo2;
+    animation-duration: 6s;
+    filter: sepia(100%);
+}
+#Cat{
+    height: 60px;
+    width: 60px;
+    animation-name: Cat;
+    animation-duration: 9s;
+}
+#Cat2{
+    height: 180px;
+    width: 180px;
+    animation-name: Cat;
+    animation-duration: 4s;
+}
+#Pokemon{
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    animation-name: Pokemon;
+    animation-duration: 30s;
+    animation-delay: 0s;
+}
+#Pokemon:hover{
+    background-color: rgba(255, 255, 255, 0.601);
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.697);
+    cursor: pointer;
+}
