@@ -7,6 +7,7 @@
     flex-direction: row;
     flex: auto;
     padding: 10px;
+    padding-top: 7em;
 }
 #ProfilePhoto{
     position: relative;
@@ -36,7 +37,7 @@
     width: 200px;
     height: 200px;
     background-color: #C51D16;
-    background-image: url("../../assets/images/LogoDrPeste.png");
+    background-image: url("../../../images/LogoDrPeste.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;   
@@ -61,7 +62,7 @@
 }
 @media only screen and (max-width: 622px){
     .square{
-        height: 350px;
+        height: 400px;
     }
     #PhotoOne{
         top: 54%;
@@ -82,6 +83,6 @@
     }
     h3{
         font-size: 12px;
-        margin: 10px;
+        margin-top: 60px;
     }
 }

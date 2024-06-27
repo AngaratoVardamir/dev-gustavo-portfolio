@@ -17,7 +17,7 @@ html, body{
 }
 #Parallax2{
     flex: auto;
-    background-image: url("../../assets/images/Floresta.png");
+    background-image: url("../../../images/Cachoeira.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;

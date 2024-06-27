@@ -1,12 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-html, body{
-    width: 100%;
-    height: 100%;
-    background-color: #232323;
-}
 #MidiaSocial{
     position: relative;
     background-color: #1E9C4D;
@@ -14,6 +5,7 @@ html, body{
     height: 250px;
     display: flex;
     flex-direction: column;
+    font-family: "Cloister";
 }
 #MidiaSocial > h2{
     background-color: #cdcdcd;
@@ -34,6 +26,7 @@ html, body{
     align-items: center;
 }
 .fab{
+    position: relative;
     background-color: #C51D16;
     width: 150px;
     height: 150px;
@@ -43,4 +36,25 @@ html, body{
     display: grid;
     place-items: center;
     color: white;
+}
+.fab:hover{
+    background-color: white;
+    color: #C51D16;
+    cursor: pointer;
+    transition: .6s; 
+    transition-timing-function: ease;
+}
+.fab > a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.Copy{
+    background-color: #0C6291;
+    color: rgb(255, 255, 255);
+}
+.Copy:hover{
+    background-color: rgb(255, 255, 255);
+    color: #0C6291;
 }

@@ -1,12 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-html, body{
-    height: 100%;
-    width: 100%;
-    background-color: #232323;
-}
 #Footer{
     width: 100%;
     height: 100px;
@@ -14,6 +5,7 @@ html, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Cloister";
 }
 #Footer > div{
     background-color: #C51D16;
@@ -43,4 +35,9 @@ html, body{
     place-items: center;
     border-radius: 10px;
     margin: 10px;
+}
+@media only screen and (max-width: 622px){
+    #Footer > span{
+        font-size: 1em;
+    }
 }
