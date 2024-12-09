@@ -1,76 +1,88 @@
+/*Definição de Cores Globais*/
 :root {
-    --Color10: #1A1A1A;
-    --Color20: #4A4A4A;
-    --Color30: #E5E5E5;
-    --Color40: #FFFFFF;
-    --ColoMain: #2D3EF8;
+    --Color10: #1A1A1A; /* Cor para fundo escuro */
+    --Color20: #4A4A4A; /* Cor intermediária para elementos */
+    --Color30: #E5E5E5; /* Cor clara */
+    --Color40: #FFFFFF; /* Branco */
+    --ColoMain: #2D3EF8; /* Cor principal (azul) */
 }
-@font-face{
+/*Define variáveis de cores que serão usadas ao longo do código, permitindo fácil manutenção.*/
+
+/*Fontes Personalizadas*/
+@font-face {
     font-family: "NeoTech";
     src: url('fonts/neotech/neotech.otf');
 }
-@font-face{
+@font-face {
     font-family: "Montserrat";
     src: url('fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
 }
+/*Declara duas fontes personalizadas para o projeto: NeoTech e Montserrat.*/
+
+/*Reset Geral*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: 0;
 }
+/*Remove margens, preenchimentos e bordas padrão de todos os elementos para garantir consistência no estilo.*/
 
+/*Estilo Geral da Página*/
 html, body {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Oculta as gotas que saem da tela */
+    overflow: hidden; /* Impede rolagem, essencial para o efeito visual do fundo */
 }
 
+/*Área de Fundo Animado (#RainZone)*/
 #RainZone {
     position: fixed;
     background-color: var(--Color10);
-    z-index: -1;
+    z-index: -1; /* Fica abaixo de outros elementos */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
-    position: absolute; /* Absoluto para ocupar toda a tela, mas ficar no fundo */
     top: 0;
     left: 0;
 }
+/*Fundo fixo com animação de gotas de chuva.*/
 
+/*Animação de Chuva*/
 @keyframes RainAnimation {
     0% {
-        transform: translateY(-100px); /* Começa fora da tela, acima */
+        transform: translateY(-100px); /* Começa fora da tela */
     }
     100% {
-        transform: translateY(100vh); /* Move-se até a parte inferior da tela */
+        transform: translateY(100vh); /* Desce pela tela inteira */
     }
 }
 
+/*Gotas de Chuva*/
 .Rain {
     width: 2px;
     height: 8px;
     background-color: var(--Color40);
     border-radius: 50%;
-    position: absolute; /* Necessário para as gotas se moverem individualmente */
+    position: absolute;
     animation-name: RainAnimation;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; /* Movimento contínuo e sem aceleração */
+    animation-timing-function: linear;
 }
+/*Cada gota é um pequeno elemento animado com movimento linear infinito.*/
 
-/* Principal */
-
-#Main{
+/*Seção Principal (#Main)*/
+#Main {
     position: relative;
-    z-index: 1;
-    padding: 20px; /* Espaço interno geral */
-    box-sizing: border-box;
+    z-index: 1; /* Acima do fundo */
+    padding: 20px;
     width: 100%;
     height: 100%;
-    
 }
-#Head{
+
+/*Cabeçalho (#Head)*/
+#Head {
     width: 100%;
     height: 60px;
     color: var(--Color40);
@@ -79,26 +91,38 @@ html, body {
     align-items: center;
     font-size: 30px;
 }
-#Buttons{
+/*Cabeçalho com espaçamento entre elementos.*/
+
+/*Botões (#Buttons)*/
+#Buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
+    width: 500px;
     height: 30px;
 }
-#Buttons > input{
+#Buttons > input {
     background-color: var(--ColoMain);
     border: 2px solid var(--Color40);
     color: var(--Color40);
-    width: 90px;
+    width: 100px;
     text-align: center;
-    height: 24px;
+    height: 30px;
     font-family: "NeoTech";
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-#SocialMedia{
- display: flex;
+#Buttons > input:hover {
+    background-color: var(--Color40);
+    color: var(--ColoMain);
 }
-#SocialMedia > a{
+/*Estilo para um grupo de botões, com cores e fontes personalizadas.*/
+
+/*Redes Sociais (#SocialMedia)*/
+#SocialMedia {
+    display: flex;
+}
+#SocialMedia > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,67 +131,63 @@ html, body {
     margin: 10px;
     width: 80px;
     height: 80px;
-    height: 80px;
     text-align: center;
     color: var(--Color40);
     border: 2px solid var(--Color40);
-    border-radius: 50%;
+    border-radius: 50%; /* Ícones em formato circular */
+    transition: background-color .5s ease, color .3s ease;
 }
-#Name{
+#SocialMedia > a:hover{
+    background-color: var(--Color40);
+    color: var(--ColoMain);
+}
+/*Nome e Profissão*/
+#Name {
     font-family: "NeoTech";
     font-size: 4em;
-    -webkit-text-stroke: 2px var(--ColoMain);
+    -webkit-text-stroke: 2px var(--ColoMain); /* Borda no texto */
     text-align: center;
+    color: var(--Color40);
 }
-#Profession{
+#Profession {
     font-family: "NeoTech";
     font-size: 2em;
     color: var(--ColoMain);
 }
-#Biography{
+/*Estilo destacado para o nome e a profissão.*/
+
+/*Biografia*/
+#Biography {
     font-family: "Montserrat";
     padding: 10px;
     font-size: 1em;
+    color: var(--Color40);
 }
-main{
+
+/*Conteúdo Principal (main)*/
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.237);
-    height: 500px; 
+    background-color: rgba(255, 255, 255, 0.237); /* Fundo translúcido */
+    height: 500px;
     border: 1px solid var(--Color40);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); /* Desfoca elementos no fundo */
+    border-radius: 10px;
 }
-main > div{
+main > div {
     flex: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#Dados{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: column;
-    color: var(--Color40);
 }
-@keyframes sombraImg{
-    25%{
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-    50%{
-        box-shadow: 0px 0px 0px 0px, rgba(0, 0, 0, 0.3)
-    }
-    75%{
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-    100%{
-        box-shadow: 0px 0px 0px 0px, rgba(0, 0, 0, 0.3)
-    }
-}
-main > div > img{
+/*Container centralizado, com um leve efeito de vidro.*/
+
+/*Imagem Animada*/
+main > div > img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -177,20 +197,41 @@ main > div > img{
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-footer{
+
+/*Animação de Sombras*/
+@keyframes sombraImg {
+    25%, 75% {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px;
+    }
+    50%, 100% {
+        box-shadow: 0px 0px 0px 0px;
+    }
+}
+
+/*Rodapé (footer)*/
+footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
-footer > button{
+footer > button {
     font-family: "Montserrat";
-    border: 6px solid var(--ColoMain);
+    border: 1px solid var(--ColoMain);
     border-radius: 10px;
     width: 200px;
     height: 50px;
-    background-color: var(--Color10);
+    background-color: #1a1a1a87;
     color: var(--Color40);
     font-size: 1.3em;
     margin: 20px;
+    backdrop-filter: blur(1px); /* Desfoca elementos no fundo */
+    transition: .5s;
+    cursor: pointer;
 }
+footer > button:hover {
+    border: 5px solid var(--Color40);
+    background-color: #2d3ef884;
+    backdrop-filter: blur(3px); /* Desfoca elementos no fundo */
+}
+/*Rodapé com botões destacados.*/
