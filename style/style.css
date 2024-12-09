@@ -1,0 +1,196 @@
+:root {
+    --Color10: #1A1A1A;
+    --Color20: #4A4A4A;
+    --Color30: #E5E5E5;
+    --Color40: #FFFFFF;
+    --ColoMain: #2D3EF8;
+}
+@font-face{
+    font-family: "NeoTech";
+    src: url('fonts/neotech/neotech.otf');
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Oculta as gotas que saem da tela */
+}
+
+#RainZone {
+    position: fixed;
+    background-color: var(--Color10);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute; /* Absoluto para ocupar toda a tela, mas ficar no fundo */
+    top: 0;
+    left: 0;
+}
+
+@keyframes RainAnimation {
+    0% {
+        transform: translateY(-100px); /* Começa fora da tela, acima */
+    }
+    100% {
+        transform: translateY(100vh); /* Move-se até a parte inferior da tela */
+    }
+}
+
+.Rain {
+    width: 2px;
+    height: 8px;
+    background-color: var(--Color40);
+    border-radius: 50%;
+    position: absolute; /* Necessário para as gotas se moverem individualmente */
+    animation-name: RainAnimation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /* Movimento contínuo e sem aceleração */
+}
+
+/* Principal */
+
+#Main{
+    position: relative;
+    z-index: 1;
+    padding: 20px; /* Espaço interno geral */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    
+}
+#Head{
+    width: 100%;
+    height: 60px;
+    color: var(--Color40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+#Buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 30px;
+}
+#Buttons > input{
+    background-color: var(--ColoMain);
+    border: 2px solid var(--Color40);
+    color: var(--Color40);
+    width: 90px;
+    text-align: center;
+    height: 24px;
+    font-family: "NeoTech";
+}
+#SocialMedia{
+ display: flex;
+}
+#SocialMedia > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: var(--ColoMain);
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    height: 80px;
+    text-align: center;
+    color: var(--Color40);
+    border: 2px solid var(--Color40);
+    border-radius: 50%;
+}
+#Name{
+    font-family: "NeoTech";
+    font-size: 4em;
+    -webkit-text-stroke: 2px var(--ColoMain);
+    text-align: center;
+}
+#Profession{
+    font-family: "NeoTech";
+    font-size: 2em;
+    color: var(--ColoMain);
+}
+#Biography{
+    font-family: "Montserrat";
+    padding: 10px;
+    font-size: 1em;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.237);
+    height: 500px; 
+    border: 1px solid var(--Color40);
+    backdrop-filter: blur(2px);
+}
+main > div{
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Dados{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: var(--Color40);
+}
+@keyframes sombraImg{
+    25%{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    50%{
+        box-shadow: 0px 0px 0px 0px, rgba(0, 0, 0, 0.3)
+    }
+    75%{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    100%{
+        box-shadow: 0px 0px 0px 0px, rgba(0, 0, 0, 0.3)
+    }
+}
+main > div > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--Color40);
+    margin: 10px;
+    animation-name: sombraImg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+footer > button{
+    font-family: "Montserrat";
+    border: 6px solid var(--ColoMain);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--Color10);
+    color: var(--Color40);
+    font-size: 1.3em;
+    margin: 20px;
+}
