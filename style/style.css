@@ -52,7 +52,7 @@ html, body {
 /*Animação de Chuva*/
 @keyframes RainAnimation {
     0% {
-        transform: translateY(-100px); /* Começa fora da tela */
+        transform: translateY(-100vh); /* Começa fora da tela */
     }
     100% {
         transform: translateY(100vh); /* Desce pela tela inteira */
@@ -126,11 +126,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
     background-color: var(--ColoMain);
     margin: 10px;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     text-align: center;
     color: var(--Color40);
     border: 2px solid var(--Color40);
@@ -144,7 +144,7 @@ html, body {
 /*Nome e Profissão*/
 #Name {
     font-family: "NeoTech";
-    font-size: 4em;
+    font-size: 3em;
     -webkit-text-stroke: 2px var(--ColoMain); /* Borda no texto */
     text-align: center;
     color: var(--Color40);
@@ -202,9 +202,11 @@ main > div > img {
 @keyframes sombraImg {
     25%, 75% {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px;
+        transform: translateY(10px);
     }
     50%, 100% {
         box-shadow: 0px 0px 0px 0px;
+        transform: translateY(0px);
     }
 }
 
@@ -235,3 +237,76 @@ footer > button:hover {
     backdrop-filter: blur(3px); /* Desfoca elementos no fundo */
 }
 /*Rodapé com botões destacados.*/
+
+/*Botão do Audio da Chuva*/
+#AudioButtonRain{
+    background-color: var(--Color40);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--ColoMain);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--ColoMain);
+    cursor: pointer;
+    transition: .5s;
+}
+#AudioButtonRain:hover{
+    background-color: var(--ColoMain);
+    color: var(--Color40);
+}
+@media only screen and (max-width: 768px) {
+    /*Biografia*/
+    #Biography{
+        font-size: 13px;
+    }
+    /*Imagem Animada*/
+    main > div > img {
+        width: 130px;
+        height: 130px;
+    }
+    #Name{
+        font-size: 2.5em;
+        -webkit-text-stroke: .6px var(--ColoMain); /* Borda no texto */
+    }
+    #Profession {
+        font-size: 1.5em;
+    }
+    /*Redes Sociais (#SocialMedia)*/
+    #SocialMedia > a {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    /*Cabeçalho (#Head)*/
+    #Head {
+        font-size: 20px;
+    }
+    #Buttons > input {
+        width: 65px;
+        height: 30px;
+        font-size: .5em;
+    }
+    footer > button {
+        width: 100px;
+        height: 40px;
+        font-size: 1em;
+        margin: 10px;
+    }
+    #AudioButtonRain{
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+    }
+    #Main{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        flex: auto;
+        flex-direction: column-reverse;
+    }
+}
