@@ -5,23 +5,23 @@
     <!-- Metadados essenciais -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Título da página -->
     <title>Gustavo Augusto</title>
-
     <!-- Link para o CSS local -->
     <link rel="stylesheet" href="style/style.css">
-
     <!-- Link para os ícones do Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <!-- Link do Favicon, o icone da pagina -->
     <link rel="shortcut icon" href="style/imgs/LotipoIcon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!-- Área para o efeito de chuva -->
-    <div id="RainZone"></div>
+    <div id="RainZone">
+        <div class="Rain">
+
+        </div>
+    </div>
 
     <!-- Conteúdo principal -->
     <div id="Main">
@@ -32,10 +32,10 @@
 
             <!-- Botões de navegação -->
             <span id="Buttons">
-                <input type="button" value="Inicial">
-                <input type="button" value="Habilidades">
-                <input type="button" value="Projetos">
-                <input type="button" value="Config">
+                <input type="button" value="Inicial" class="ActiveButton Input">
+                <input type="button" value="Habilidades" class="Input">
+                <input type="button" value="Projetos" class="Input">
+                <input type="button" value="Config" class="Input">
             </span>
         </header>
 
@@ -83,7 +83,7 @@
         <!-- Rodapé com botões para alterar o tema -->
         <footer>
             <button type="button">Luz ☀️</button>
-            <button type="button">Escuro 🌙</button>
+            <button type="button" class="ActiveButton">Escuro 🌙</button>
             <!-- Botão do Som -->
             <div id="AudioButtonRain">
                 <i class="bi bi-volume-mute-fill"></i>
@@ -91,7 +91,12 @@
         </footer>
     </div>
     <!-- Script externo -->
-    <script src="Script.js"></script>
 </body>
-
+<div id="ConfigurationWindow">
+    <div>
+        <form action=""></form>
+    </div>
+    <div></div>
+</div>
 </html>
+<script src="Script.js" defer></script>

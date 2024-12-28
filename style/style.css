@@ -2,8 +2,8 @@
 :root {
     --Color10: #1A1A1A; /* Cor para fundo escuro */
     --Color20: #4A4A4A; /* Cor intermediária para elementos */
-    --Color30: #E5E5E5; /* Cor clara */
-    --Color40: #FFFFFF; /* Branco */
+    --Color30: #F7B02D; /* Cor Laranja */
+    --Color40: #F5F5F5; /* Branco */
     --ColoMain: #2D3EF8; /* Cor principal (azul) */
 }
 /*Define variáveis de cores que serão usadas ao longo do código, permitindo fácil manutenção.*/
@@ -33,13 +33,14 @@ html, body {
     width: 100%;
     height: 100%;
     overflow: hidden; /* Impede rolagem, essencial para o efeito visual do fundo */
+    background-color: transparent;
 }
 
 /*Área de Fundo Animado (#RainZone)*/
 #RainZone {
     position: fixed;
-    background-color: var(--Color10);
-    z-index: -1; /* Fica abaixo de outros elementos */
+    background-color: transparent;
+    z-index: -5; /* Fica abaixo de outros elementos */
     width: 100%;
     height: 100%;
     display: flex;
@@ -101,7 +102,7 @@ html, body {
     width: 500px;
     height: 30px;
 }
-#Buttons > input {
+.Input {
     background-color: var(--ColoMain);
     border: 2px solid var(--Color40);
     color: var(--Color40);
@@ -113,8 +114,9 @@ html, body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 #Buttons > input:hover {
-    background-color: var(--Color40);
-    color: var(--ColoMain);
+    background-color: transparent;
+    color: var(--Color30);
+    border-color: var(--Color30);
 }
 /*Estilo para um grupo de botões, com cores e fontes personalizadas.*/
 
@@ -138,8 +140,9 @@ html, body {
     transition: background-color .5s ease, color .3s ease;
 }
 #SocialMedia > a:hover{
-    background-color: var(--Color40);
-    color: var(--ColoMain);
+    background-color: transparent;
+    color: var(--Color30);
+    border-color: var(--Color30);
 }
 /*Nome e Profissão*/
 #Name {
@@ -232,9 +235,10 @@ footer > button {
     cursor: pointer;
 }
 footer > button:hover {
-    border: 5px solid var(--Color40);
-    background-color: #2d3ef884;
+    border: 1px solid var(--Color30);
+    background-color: transparent;
     backdrop-filter: blur(3px); /* Desfoca elementos no fundo */
+    color: var(--Color30);
 }
 /*Rodapé com botões destacados.*/
 
@@ -255,9 +259,28 @@ footer > button:hover {
     transition: .5s;
 }
 #AudioButtonRain:hover{
-    background-color: var(--ColoMain);
-    color: var(--Color40);
+    border-color: var(--Color30);
+    background-color: transparent;
+    color: var(--Color30);
 }
+
+#ConfigurationWindow{
+    display: none;
+    background-color: var(--Color10);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+}
+
+.ActiveButton{
+    background-color: var(--Color20);
+    border-color: var(--Color40);
+}
+
+
+
 @media only screen and (max-width: 768px) {
     /*Biografia*/
     #Biography{

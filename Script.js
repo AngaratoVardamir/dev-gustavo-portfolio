@@ -4,7 +4,7 @@ function DropCreation() {
     const RainZone = document.getElementById('RainZone');
     
     // Definindo a quantidade de gotas de chuva
-    const QuantityOfDrops = 40;
+    const QuantityOfDrops = 50;
 
     // Loop para criar e adicionar cada gota de chuva ao DOM
     for (let gotas = 1; gotas <= QuantityOfDrops; gotas++) {
@@ -14,7 +14,6 @@ function DropCreation() {
         
         // Adicionando a classe CSS 'Rain' ao elemento
         NovaGota.setAttribute('class', 'Rain');
-        
         // Adicionando o elemento criado como filho de RainZone
         RainZone.appendChild(NovaGota);
     }
@@ -55,7 +54,7 @@ function playSoundInfinite() {
     let controle = true;
     const buttonAudio = document.getElementById("AudioButtonRain");
     // Criando um novo objeto de áudio
-    const audio = new Audio('style/audio/SomDeChuva.mp3');
+    const audio = new Audio('style/audio/BeatsGaao.mp3');
     // Capturando o evento de clique do botão
     buttonAudio.addEventListener("click", () => {
         // Configurando o som para repetir infinitamente
@@ -65,11 +64,17 @@ function playSoundInfinite() {
             controle = false;
             // Iniciando a reprodução do som
             audio.play()
+            buttonAudio.style.backgroundColor = "var(--Color30)";
+            buttonAudio.style.color = "var(--Color40)";
+            buttonAudio.style.borderColor = "var(--Color40)";
         }
         else{
             buttonAudio.innerHTML = (`<i class="bi bi-volume-mute-fill"></i>`);
             controle = true;
             audio.pause()
+            buttonAudio.style.backgroundColor = "var(--Color40)";
+            buttonAudio.style.color = "var(--ColoMain)";
+            buttonAudio.style.borderColor = "var(--ColoMain)";
         }
     });
 }
